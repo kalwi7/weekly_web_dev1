@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<title> Webdev1</title>
+    
+</head>
+
+<body>
+    <main>
+        <div class="column">
+        <form class="register">
+
+            <div class="icon_input">
+                <input class="user" type="text" name="useranem" placeholder="username" required >
+                <i class="fas fa-user"></i><div id="line"></div>
+            </div>
+
+            <div class="icon_input">
+                <input class="key" type="password" name="password " placeholder="password" required >
+               <i class="fas fa-lock"></i><div id="line"></div>
+            </div>
+
+            <div class="icon_input">
+                <input class="key" type="password" name="password2" placeholder="confirm password" required>
+                <i class="fas fa-lock"></i><div id="line"></div>
+            </div>
+
+            <div class="icon_input">
+                <input class="mail" type="email" name="email" placeholder="e-mail" required>
+                <i class="fas fa-envelope"></i><div id="line"></div>
+            </div>   
+            
+
+            <div class="icon_input">
+                <select class="location" type="text" name="location">
+                    <option value="none" disabled selected>Your Location</option>
+                    <option value="Poland">Poland</option> 
+                    <option value="Germany">Germany</option>
+                    <option value="Greece">Greece</option>
+                </select>  
+            <i class="fas fa-map-marker"></i><div id="line"></div>    
+            </div>
+            
+            <div class="checkbox">
+                <input id="terms" type="checkbox" name="terms">
+                <label for="terms"></label>
+                <span id="info_check"> I have read and accept a terms of use.</span> 
+           </div>
+             
+            
+             <div class="button" >
+                 <input class="sign" type="submit" value="Sign up">
+            </div>    
+
+        </form>
+            </div>
+    </main>
+</body>
+</html>
