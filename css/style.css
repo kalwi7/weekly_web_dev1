@@ -1,27 +1,73 @@
 body {
-    font-size: 35px;
+    font-size: 15px;
     margin: 0;
-    
-}
-.column{
-    background-color: aqua;
-    width: 300px;
-    padding: 30px;   
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
+    font-family: 'Titillium Web', sans-serif;
     position: relative;
+    background-image: url(/img/bg.jpg);
+    background-size: cover;
+    background-position: center center
 }
 
-input, select{
-    width: 300px;
-    font-size: 20px;
-    padding: 10px;
-    margin-top: 15px;
-    box-sizing: border-box;
-    border-radius: 5px;
+main{
+    position: relative;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.row{
+    display:inline-block;
+    vertical-align: top;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px; 
+    width: 500px;
+
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+    min-width: 440px;
+    color: white;
+    text-shadow: 1px 1px 2px  black;
     
 }
+.form_border {
+    background-color:rgba(0, 0, 0, 0.3);
+    width: 400px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 7px;
+     position: relative;
+ 
+}
+
+.column{
+    background-color:white;
+    width: 350px;
+    padding: 20px;
+    padding-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border-radius: 7px;
+}
+
+
+input, select{
+    width: 350px;
+    font-size: 20px;
+    padding: 7px;
+    margin-top: 15px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    border: 1px solid #CCCCCC;
+    color: grey;
+}
+
 
 .checkbox{
     width: 28px;
@@ -29,7 +75,6 @@ input, select{
     margin-top: 15px;
     position: relative;
     
-
 }
 
 .checkbox input[type="checkbox"]{
@@ -39,6 +84,7 @@ input, select{
 
 .checkbox label{
     background-color: white;
+    border: 1px solid grey;
     width: 26px;
     height: 26px;
     border-radius: 5px;
@@ -67,52 +113,129 @@ input, select{
 }
 
 
-#info_check {
-    font-size: 16px;
-    width: 250px;
+#info_check, #remember_check {
+    float: left;
+    font-size: 19px;
+    width: 300px;
     position: absolute;
-    top: 5px;
-    right: -270px;   
+    top: 1px;
+    right: -320px;
+    color: grey;
 }
 
 .icon_input input, select{
-    padding-left: 65px;
+    padding-left: 75px;
+    font-family: inherit;
+    font-size: 17px;  
 }
+
+
 
 .icon_input{
     position: relative;
 }
 
 .icon_input i{
-    font-size: 25px;
+    font-size: 22px;
     position: absolute;
     left: 18px;
     top: 25px;
-    color: grey;      
+    color: #AFAFAF;      
 }
 
 .icon_input #line{
-    background-color: gray;
+    background-color: #AFAFAF;
     width: 1px;
     height: 29px;
     position: absolute;
-    top: 25px;
+    top: 22px;
     left: 55px;
 }
-/*
-.checkbox input[type="checkbox"]:checked + label {
-    background-color: aqua;
+
+
+input[type="submit"] {
+    background-image: linear-gradient(#A2D840, #7EC31F);
+    border: 1px solid #3A9A00;
+    font-family: inherit;
+    font-weight: 200;
+    font-size: 28px;
+    padding: 2px;
+    color: #FFFFFF;
+    text-shadow: 2px 2px dimgray;    
 }
-*/
+
+input[type="submit"]:hover{
+    background-image: linear-gradient(#7EC31F, #A2D840);
+    border: 1px solid #3A9A00;
+}
+
+.message textarea{
+    width: 350px;
+    height: 250px;
+    border-radius: 7px;
+    margin-top: 15px; 
+    position: relative;
+    border: 1px solid #CCCCCC;
+    color: grey;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 17px;
+    padding-left: 20px;
+    padding-top: 20px;  
+}
+
+.bottom{
+  margin-top: 25px;
+  position: relative;
+  padding: 0px;
+  height: 50px;
+}
+
+#sign_in {
+    float: right; 
+    width: 45%;
+    position: absolute;
+    top: -15px;
+    left: 190px;
+    margin-top: 5px;
+    
+/*    border: 20px solid black;*/
+}
+
+#send, #sub{
+    margin: 0px;
+    float: left;
+    width: 45%;
+/*    display: inline-block;*/
+}
+
+#done, #no_thanks{
+    margin: 0px;
+    float: right;
+    width: 45%;
+}
+
+#no_thanks{
+    margin: 0px;
+    float: right;
+    width: 45%;
+    background-image: linear-gradient(#f76f7f, #f03848);
+}
+#no_thanks:hover{
+     background-image: linear-gradient(#f03848, #f76f7f);
+}
+
+#logo_botom{
+    margin-top: 70px
+}
+
+#logo_top{
+    margin-top: 70px;
+
 
 /*
-input[type="checkbox"] {
-   display: none;
-
-input[type="checkbox"] + span:before{
-    margin: 0;
-    width: 24px;
-    height: 24px
-    float: left;
-    background: #444;
-}*/
+    margin-left: auto;
+    margin-right: auto;
+*/
+        
+}
