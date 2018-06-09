@@ -3,9 +3,10 @@ body {
     margin: 0;
     font-family: 'Titillium Web', sans-serif;
     position: relative;
-    background-image: url(/img/bg.jpg);
+    background-image: url(../img/bg.jpg);
     background-size: cover;
-    background-position: center center
+    background-position: center center;
+    min-width: 540px;
 }
 
 main{
@@ -226,16 +227,59 @@ input[type="submit"]:hover{
 }
 
 #logo_botom{
-    margin-top: 70px
+    margin-top: 70px;
+    margin-bottom: 30px;
 }
 
 #logo_top{
     margin-top: 70px;
+    text-align: center;
 
-
+}
 /*
-    margin-left: auto;
-    margin-right: auto;
+MEDIA 
 */
-        
+@media screen and (max-width: 362px){
+    
+    body{
+        width: 100%;
+        min-width: 0px;
+    }
+    main {
+        width: 100%;
+    }
+    .row{
+        width: 100%;
+        padding: 2px;
+    }
+.form_border {
+   
+    width: 111%;
+}
+
+    #logo_botom{
+    margin-top: 70px;
+    margin-bottom: 30px;
+    width: 122%;
+}
+
+#logo_top{
+    margin-top: 70px;
+    text-align: center;
+    width: 122%;
+
+}
+
+.column{
+   
+    width: 90%;  
+}
+    h1{
+    font-size: 30px;
+    text-align: center;
+    min-width: 122%;
+    color: white;
+    text-shadow: 1px 1px 2px  black;
+    
+}
 }
